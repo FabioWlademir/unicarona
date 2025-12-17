@@ -29,7 +29,7 @@
             line-height: 1.6;
             color: var(--dark);
             background-color: #f5f7fa;
-            overflow-x: hidden; /* Adicionado para prevenir scroll horizontal */
+            overflow-x: hidden;
         }
         
         .container {
@@ -91,7 +91,7 @@
             border-bottom: 1px solid #dee2e6;
             margin-bottom: 0;
             position: relative;
-            z-index: 999;
+            z-index: 1001;
         }
         
         .group-info h3 {
@@ -568,6 +568,11 @@
             color: var(--gray);
         }
         
+        /* Scroll padding para links âncora */
+        html {
+            scroll-padding-top: 120px;
+        }
+        
         /* Responsividade */
         @media (max-width: 992px) {
             .steps, .benefits-grid {
@@ -588,19 +593,70 @@
         }
         
         @media (max-width: 768px) {
+            /* Ajustes para mobile */
+            html {
+                scroll-padding-top: 180px;
+            }
+            
+            body {
+                padding-top: 160px;
+            }
+            
+            header {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 1000;
+            }
+            
+            .group-info {
+                position: relative;
+                z-index: 1001;
+                padding: 5px 0;
+                margin-bottom: 0;
+                border-bottom: none;
+            }
+            
+            .group-info h3 {
+                font-size: 12px;
+                margin-bottom: 4px;
+            }
+            
+            .group-number {
+                font-size: 12px;
+                padding: 3px 10px;
+                margin-bottom: 5px;
+            }
+            
+            .group-members {
+                font-size: 11px;
+                gap: 5px;
+            }
+            
+            .group-members span {
+                padding: 2px 6px;
+                border-radius: 10px;
+            }
+            
             .header-content {
                 flex-direction: column;
-                gap: 20px;
+                gap: 15px;
+                padding: 10px 0;
             }
             
             nav ul {
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 15px;
+                gap: 10px;
             }
             
             .steps, .benefits-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .hero {
+                padding: 40px 0;
+                margin-top: 0;
             }
             
             .hero h2 {
@@ -621,10 +677,6 @@
                 gap: 5px;
             }
             
-            .group-info h3 {
-                font-size: 14px;
-            }
-            
             .cta-buttons {
                 flex-direction: column;
                 width: 100%;
@@ -638,8 +690,34 @@
         }
         
         @media (max-width: 480px) {
+            html {
+                scroll-padding-top: 170px;
+            }
+            
+            body {
+                padding-top: 150px;
+            }
+            
+            .group-info {
+                padding: 4px 0;
+            }
+            
+            .group-info h3 {
+                font-size: 11px;
+            }
+            
+            .group-members {
+                flex-direction: column;
+                gap: 3px;
+            }
+            
+            .hero {
+                padding: 30px 0;
+            }
+            
             .hero h2 {
                 font-size: 24px;
+                margin-top: 10px;
             }
             
             .hero p {
@@ -652,6 +730,16 @@
             
             .group-info {
                 padding: 8px 0;
+            }
+            
+            section {
+                padding: 40px 0;
+            }
+        }
+        
+        @media (min-width: 769px) {
+            html {
+                scroll-padding-top: 120px;
             }
         }
     </style>
@@ -1176,8 +1264,12 @@
                 
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
+                    // Calcular offset baseado no tamanho da tela
+                    const isMobile = window.innerWidth <= 768;
+                    const offset = isMobile ? 180 : 80;
+                    
                     window.scrollTo({
-                        top: targetElement.offsetTop - 80,
+                        top: targetElement.offsetTop - offset,
                         behavior: 'smooth'
                     });
                 }
