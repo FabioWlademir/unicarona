@@ -243,5 +243,4 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para d
 <sub>Design by <a href="https://fabiowlademir.github.io/">Fábio Wlademir</a></sub>
 
 </div> ```
-📁 Estrutura de Arquivos Adicional
-Crie também estes arquivos para completar o repositório:
+
