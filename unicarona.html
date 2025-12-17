@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniCarona | UNISINOS - Carona entre universitários</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset e Variáveis */
+        :root {
+            --primary: #0056A6; /* Azul UNISINOS */
+            --secondary: #00A86B; /* Verde sustentabilidade */
+            --accent: #FF6B00; /* Laranja ação */
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --gray: #6c757d;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f5f7fa;
+            overflow-x: hidden; /* Adicionado para prevenir scroll horizontal */
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-icon {
+            background-color: var(--primary);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        
+        .logo-text h1 {
+            font-size: 24px;
+            color: var(--primary);
+        }
+        
+        .logo-text p {
+            font-size: 14px;
+            color: var(--gray);
+        }
+        
+        .group-info {
+            text-align: center;
+            padding: 10px 0;
+            background: linear-gradient(to right, #f8f9fa, #e9ecef, #f8f9fa);
+            border-top: 1px solid #dee2e6;
+            border-bottom: 1px solid #dee2e6;
+            margin-bottom: 0;
+            position: relative;
+            z-index: 999;
+        }
+        
+        .group-info h3 {
+            color: var(--primary);
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        
+        .group-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            font-size: 13px;
+            color: var(--dark);
+        }
+        
+        .group-members span {
+            padding: 3px 8px;
+            background-color: white;
+            border-radius: 12px;
+            border: 1px solid #dee2e6;
+            transition: var(--transition);
+        }
+        
+        .group-members span:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+        }
+        
+        .group-members a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .group-members a:hover {
+            text-decoration: underline;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        nav a:hover {
+            color: var(--primary);
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            display: inline-block;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #004085;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background-color: var(--secondary);
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #008f5a;
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0056A6 0%, #003366 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        /* How It Works */
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        section {
+            padding: 80px 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            padding: 30px 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .step:hover {
+            transform: translateY(-10px);
+        }
+        
+        .step-icon {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(0, 86, 166, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 32px;
+            color: var(--primary);
+        }
+        
+        .step h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        /* Benefits */
+        .benefits {
+            background-color: #f0f7ff;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .benefit-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .benefit-icon {
+            font-size: 40px;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        /* Statistics */
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 18px;
+            color: var(--dark);
+        }
+        
+        /* Security */
+        .security-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        
+        .security-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            min-width: 250px;
+        }
+        
+        .security-icon {
+            color: var(--secondary);
+            font-size: 24px;
+        }
+        
+        /* Forms */
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: var(--transition);
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 86, 166, 0.2);
+        }
+        
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .footer-column h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .partners {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .partner-logo {
+            background-color: white;
+            color: var(--primary);
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+        
+        .academic-info {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        .academic-info h4 {
+            color: var(--secondary);
+            margin-bottom: 20px;
+            font-size: 22px;
+            text-align: center;
+        }
+        
+        .academic-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .academic-item {
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+        }
+        
+        .academic-item strong {
+            color: var(--secondary);
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .academic-item a {
+            color: #00A86B;
+            text-decoration: none;
+        }
+        
+        .academic-item a:hover {
+            text-decoration: underline;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid #444;
+            color: #aaa;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+        
+        .group-number {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal-content {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 90%;
+            position: relative;
+            animation: modalFade 0.3s;
+        }
+        
+        @keyframes modalFade {
+            from {opacity: 0; transform: translateY(-50px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--gray);
+        }
+        
+        /* Responsividade */
+        @media (max-width: 992px) {
+            .steps, .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .hero h2 {
+                font-size: 32px;
+            }
+            
+            .section-title h2 {
+                font-size: 30px;
+            }
+            
+            .group-members {
+                font-size: 12px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+            
+            .steps, .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h2 {
+                font-size: 28px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            section {
+                padding: 50px 0;
+            }
+            
+            .group-members {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+            
+            .group-info h3 {
+                font-size: 14px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                width: 100%;
+                max-width: 250px;
+            }
+            
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h2 {
+                font-size: 24px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+            
+            .section-title h2 {
+                font-size: 26px;
+            }
+            
+            .group-info {
+                padding: 8px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header com Informações do Grupo -->
+    <header>
+        <div class="group-info">
+            <div class="container">
+                <div class="group-number">GRUPO 5</div>
+                <h3>Integrantes do Projeto UniCarona</h3>
+                <div class="group-members">
+                    <span>Celeste Klein</span>
+                    <span><a href="https://fabiowlademir.github.io/" target="_blank">Fábio Wlademir R. da Silva</a></span>
+                    <span>Igor Enninger</span>
+                    <span>Maitê Siqueira da Silva</span>
+                    <span>Manoela Moreira</span>
+                    <span>Milena Arrosi Accadrolli</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>UniCarona</h1>
+                        <p>UNISINOS | Carona entre universitários</p>
+                    </div>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#how-it-works">Como Funciona</a></li>
+                        <li><a href="#benefits">Benefícios</a></li>
+                        <li><a href="#security">Segurança</a></li>
+                        <li><a href="#contact">Participe</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="cta-buttons">
+                    <a href="#register" class="btn btn-primary">Cadastrar</a>
+                    <a href="#login" class="btn btn-outline">Entrar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Carona entre universitários, feita por universitários</h2>
+            <p>Compartilhe trajetos, economize nos custos de transporte e reduza sua pegada de carbono junto com a comunidade UNISINOS.</p>
+            <div class="hero-buttons">
+                <a href="#register" class="btn btn-primary btn-large">
+                    <i class="fas fa-user-plus"></i> Cadastre-se com e-mail @unisinos.br
+                </a>
+                <a href="#how-it-works" class="btn btn-secondary">
+                    <i class="fas fa-play-circle"></i> Como Funciona
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>Como Funciona</h2>
+                <p>Quatro passos simples para começar a compartilhar caronas na UNISINOS</p>
+            </div>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>1. Cadastre-se</h3>
+                    <p>Use seu e-mail institucional @unisinos.br para criar uma conta verificada.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>2. Ofereça ou peça</h3>
+                    <p>Ofereça caronas ou solicite uma vaga em trajetos disponíveis.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>3. Combine detalhes</h3>
+                    <p>Use nosso sistema de mensagens para combinar ponto de encontro e horário.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>4. Avalie após a viagem</h3>
+                    <p>Avalie o motorista ou passageiro e construa sua reputação no sistema.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Benefícios</h2>
+                <p>Vantagens de participar da comunidade UniCarona</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <h3>Economia</h3>
+                    <p>Reduza em até 70% seus gastos com transporte dividindo os custos do combustível.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustentabilidade</h3>
+                    <p>Diminua sua pegada de carbono retirando carros das ruas e estacionamentos.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Comunidade</h3>
+                    <p>Conheça colegas de outros cursos e amplie sua rede de contatos na universidade.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>Menos Estresse</h3>
+                    <p>Evite o trânsito sozinho, compartilhe a viagem e chegue mais relaxado às aulas.</p>
+                </div>
+            </div>
+            
+            <!-- Statistics -->
+            <div class="section-title" style="margin-top: 80px;">
+                <h2>Impacto da Comunidade</h2>
+                <p>Estatísticas em tempo real (projeção para os primeiros 6 meses)</p>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number" id="rides-count">128</div>
+                    <div class="stat-label">Caronas esta semana</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number" id="co2-saved">342</div>
+                    <div class="stat-label">kg de CO² economizados</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">4.7<span style="color: #FFD700; font-size: 36px;">★</span></div>
+                    <div class="stat-label">Avaliação média</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number" id="users-count">450</div>
+                    <div class="stat-label">Estudantes cadastrados</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security -->
+    <section id="security">
+        <div class="container">
+            <div class="section-title">
+                <h2>Segurança</h2>
+                <p>Nossa prioridade é garantir uma experiência segura para todos os participantes</p>
+            </div>
+            
+            <div class="security-features">
+                <div class="security-item">
+                    <div class="security-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <div>
+                        <h4>Verificação Acadêmica</h4>
+                        <p>Somente estudantes UNISINOS com e-mail institucional válido</p>
+                    </div>
+                </div>
+                
+                <div class="security-item">
+                    <div class="security-icon">
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Sistema de Reputação</h4>
+                        <p>Avaliações mútuas após cada viagem</p>
+                    </div>
+                </div>
+                
+                <div class="security-item">
+                    <div class="security-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Moderação Ativa</h4>
+                        <p>Equipe de moderadores estudantes voluntários</p>
+                    </div>
+                </div>
+                
+                <div class="security-item">
+                    <div class="security-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <div>
+                        <h4>Identificação da Carona</h4>
+                        <p>Código único gerado para cada viagem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Register Interest -->
+    <section id="contact" style="background-color: var(--primary); color: white;">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: white;">Participe do Projeto</h2>
+                <p>Cadastre seu interesse e seja notificado quando o UniCarona for lançado</p>
+            </div>
+            
+            <div class="form-container">
+                <form id="interest-form">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail UNISINOS</label>
+                        <input type="email" id="email" class="form-control" placeholder="seunome@unisinos.br" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="campus">Campus Principal</label>
+                        <select id="campus" class="form-control" required>
+                            <option value="">Selecione seu campus</option>
+                            <option value="sao-leopoldo">São Leopoldo</option>
+                            <option value="porto-alegre">Porto Alegre</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="role">Como gostaria de participar?</label>
+                        <select id="role" class="form-control" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="user">Como usuário (motorista/passageiro)</option>
+                            <option value="volunteer">Como voluntário (moderação/suporte)</option>
+                            <option value="developer">Como desenvolvedor</option>
+                            <option value="all">Todas as opções acima</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Sugestões ou comentários</label>
+                        <textarea id="message" class="form-control" placeholder="Conte-nos suas ideias para o projeto..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-secondary" style="width: 100%; padding: 15px;">
+                        <i class="fas fa-paper-plane"></i> Enviar Interesse
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>UniCarona</h3>
+                    <p>Plataforma de caronas colaborativa exclusiva para a comunidade UNISINOS. Juntos chegamos mais longe, com mais economia e menos impacto.</p>
+                    <div class="partners" style="margin-top: 20px;">
+                        <div class="partner-logo">DCE UNISINOS</div>
+                        <div class="partner-logo">PROCOM</div>
+                        <div class="partner-logo">Green Office</div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Página Inicial</a></li>
+                        <li><a href="#how-it-works">Como Funciona</a></li>
+                        <li><a href="#benefits">Benefícios</a></li>
+                        <li><a href="#security">Segurança</a></li>
+                        <li><a href="#contact">Cadastro de Interesse</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> contato@unicarona.unisinos.br</li>
+                        <li><i class="fas fa-map-marker-alt"></i> UNISINOS - São Leopoldo/POA</li>
+                        <li><i class="fas fa-users"></i> Buscamos voluntários!</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Seção Acadêmica -->
+            <div class="academic-info">
+                <h4>Informações Acadêmicas</h4>
+                <div class="academic-details">
+                    <div class="academic-item">
+                        <strong>Grupo:</strong>
+                        <div class="group-number">Grupo 5</div>
+                    </div>
+                    
+                    <div class="academic-item">
+                        <strong>Integrantes:</strong>
+                        <div>Celeste Klein</div>
+                        <div><a href="https://fabiowlademir.github.io/" target="_blank">Fábio Wlademir Rodrigues da Silva</a></div>
+                        <div>Igor Enninger</div>
+                        <div>Maitê Siqueira da Silva</div>
+                        <div>Manoela Moreira</div>
+                        <div>Milena Arrosi Accadrolli</div>
+                    </div>
+                    
+                    <div class="academic-item">
+                        <strong>Professora:</strong>
+                        <div>Sonia Aparecida Zardenunes</div>
+                    </div>
+                    
+                    <div class="academic-item">
+                        <strong>Disciplina:</strong>
+                        <div>Desenvolvimento Pessoal e Profissional</div>
+                    </div>
+                    
+                    <div class="academic-item">
+                        <strong>Universidade:</strong>
+                        <div>Universidade do Vale do Rio dos Sinos – UNISINOS</div>
+                    </div>
+                    
+                    <div class="academic-item">
+                        <strong>Data:</strong>
+                        <div>17 de dezembro de 2025</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>UniCarona &copy; 2025 - Projeto colaborativo da comunidade UNISINOS</p>
+                <p style="margin-top: 10px; font-size: 13px;">
+                    Design by <a href="https://fabiowlademir.github.io/" target="_blank" style="color: #00A86B; text-decoration: none;">Fábio Wlademir</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 style="color: var(--primary); margin-bottom: 20px;">Acesso UniCarona</h2>
+            <p style="margin-bottom: 25px;">Entre com seu e-mail institucional da UNISINOS</p>
+            
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">E-mail UNISINOS</label>
+                    <input type="email" id="login-email" class="form-control" placeholder="seunome@unisinos.br" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="login-password">Senha</label>
+                    <input type="password" id="login-password" class="form-control" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+                    <i class="fas fa-sign-in-alt"></i> Entrar na Plataforma
+                </button>
+            </form>
+            
+            <p style="margin-top: 20px; text-align: center; color: var(--gray);">
+                Em desenvolvimento - Lançamento em breve!
+            </p>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div style="text-align: center; padding: 20px;">
+                <div style="font-size: 60px; color: var(--secondary); margin-bottom: 20px;">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2 style="color: var(--primary); margin-bottom: 15px;">Interesse Registrado!</h2>
+                <p style="margin-bottom: 25px;">Obrigado pelo seu interesse no UniCarona. Vamos entrar em contato assim que a plataforma estiver disponível.</p>
+                <button class="btn btn-primary" id="close-success-modal">Continuar Navegando</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Elementos do DOM
+        const loginModal = document.getElementById('login-modal');
+        const successModal = document.getElementById('success-modal');
+        const closeModalButtons = document.querySelectorAll('.close-modal');
+        const closeSuccessButton = document.getElementById('close-success-modal');
+        const loginButtons = document.querySelectorAll('a[href="#login"]');
+        const registerButtons = document.querySelectorAll('a[href="#register"]');
+        const interestForm = document.getElementById('interest-form');
+        const loginForm = document.getElementById('login-form');
+        
+        // Estatísticas dinâmicas (simulação)
+        let ridesCount = 128;
+        let co2Saved = 342;
+        let usersCount = 450;
+        
+        // Funções para atualizar estatísticas
+        function updateStats() {
+            document.getElementById('rides-count').textContent = ridesCount;
+            document.getElementById('co2-saved').textContent = co2Saved;
+            document.getElementById('users-count').textContent = usersCount;
+            
+            // Simular incremento
+            ridesCount += Math.floor(Math.random() * 5);
+            co2Saved += Math.floor(Math.random() * 3);
+            usersCount += Math.floor(Math.random() * 2);
+        }
+        
+        // Atualizar estatísticas a cada 10 segundos
+        setInterval(updateStats, 10000);
+        
+        // Modal de login
+        loginButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                loginModal.style.display = 'flex';
+            });
+        });
+        
+        // Modal de registro (leva ao formulário)
+        registerButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        
+        // Fechar modais
+        closeModalButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                loginModal.style.display = 'none';
+                successModal.style.display = 'none';
+            });
+        });
+        
+        closeSuccessButton.addEventListener('click', function() {
+            successModal.style.display = 'none';
+        });
+        
+        // Fechar modal clicando fora
+        window.addEventListener('click', function(e) {
+            if (e.target === loginModal) {
+                loginModal.style.display = 'none';
+            }
+            if (e.target === successModal) {
+                successModal.style.display = 'none';
+            }
+        });
+        
+        // Formulário de interesse
+        interestForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Validar e-mail UNISINOS
+            const email = document.getElementById('email').value;
+            if (!email.includes('@unisinos.br')) {
+                alert('Por favor, use seu e-mail institucional @unisinos.br');
+                return;
+            }
+            
+            // Simular envio
+            interestForm.reset();
+            successModal.style.display = 'flex';
+            
+            // Aqui em um sistema real faria uma requisição AJAX para um backend
+            console.log('Formulário de interesse enviado');
+        });
+        
+        // Formulário de login
+        loginForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Plataforma em desenvolvimento! Em breve você poderá acessar com suas credenciais UNISINOS.');
+            loginModal.style.display = 'none';
+        });
+        
+        // Scroll suave para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') === '#') return;
+                
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#login' || targetId === '#register') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Inicializar estatísticas
+        updateStats();
+        
+        // Garantir que o body tenha altura suficiente para scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.height = 'auto';
+            document.body.style.overflowY = 'visible';
+        });
+    </script>
+</body>
+</html>
