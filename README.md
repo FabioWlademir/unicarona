@@ -101,7 +101,7 @@ unicarona/
 3. Acesse: `https://seuusuario.github.io/unicarona`
 
 ### Opção 2: Localmente
-```bash
+
 # Clone o repositório
 git clone https://github.com/seuusuario/unicarona.git
 
@@ -113,6 +113,7 @@ open index.html
 # ou
 xdg-open index.html
 # ou simplesmente arraste o arquivo para o navegador
+
 
 👥 Equipe de Desenvolvimento
 🎓 Grupo 5 - Desenvolvimento Pessoal e Profissional
@@ -242,5 +243,18 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para d
 
 <sub>Design by <a href="https://fabiowlademir.github.io/">Fábio Wlademir</a></sub>
 
-</div> ```
 
+
+---
+
+## 📞 **Vamos Conversar?**
+
+<div align="center">
+
+[![Email](https://img.shields.io/badge/Email-Contato%20Profissional-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fabiowlademir@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil%20Profissional-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fabiowlademir/)
+[![Portfolio](https://img.shields.io/badge/🌐-Portfólio%20Online-FF6B6B?style=for-the-badge)](https://fabiowlademir.github.io)
+
+</div>
+
+---
