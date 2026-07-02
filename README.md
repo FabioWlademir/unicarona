@@ -30,12 +30,12 @@
 
 ## 👨‍💻 Contrate o Desenvolvedor (Disponível para Oportunidades)
 
-Este projeto foi totalmente planejado, desenhado e codificado por mim como Desenvolvedor Frontend e UI/UX. Estou atualmente **disponível para novas oportunidades no mercado de trabalho** nas áreas de Tecnologia e suporte técnico.
+Este software foi totalmente planejado, desenhado e codificado por mim como **único desenvolvedor do projeto**. Estou atualmente **disponível para novas oportunidades no mercado de trabalho** nas áreas de Tecnologia, suporte técnico e LegalTech.
 
 **Minhas Competências Principais:**
 *   **Infraestrutura & Operações:** Analista de Suporte em TI (experiência consolidada com rotinas de NOC/SOC, monitoramento de infraestrutura, redes e segurança).
-*   **Desenvolvimento Web / Frontend:** Criação de interfaces modernas, responsivas (Mobile-first), otimizadas para SEO Avançado, performance e acessibilidade usando HTML5, CSS3 puro e JavaScript estruturado.
-*   **LegalTech & Soluções Corporativas:** Engenharia de software e web design focados em ecossistemas institucionais, acadêmicos e jurídicos.
+*   **Desenvolvimento Web / Frontend:** Criação de interfaces modernas, responsivas (Mobile-first), otimizadas para SEO Avançado, performance e acessibilidade usando HTML5, CSS3 puro e JavaScript estruturado (Vanilla).
+*   **LegalTech & Soluções Jurídicas:** Engenharia de software e web design focados em ecossistemas institucionais e jurídicos, aliando conhecimentos avançados em TI e Direito.
 
 ### 🌐 Canais de Contato Direto:
 *   **Portfólio Oficial:** [fabiowlademir.github.io](https://fabiowlademir.github.io/)
@@ -47,21 +47,21 @@ Este projeto foi totalmente planejado, desenhado e codificado por mim como Desen
 
 ## 📋 Sobre o Projeto
 
-O **UniCarona** é uma plataforma digital de compartilhamento de caronas desenvolvida exclusivamente para a comunidade acadêmica da **UNISINOS**. Desenvolvido durante o intensivo de inverno como projeto final multidisciplinar, ele foca em economia compartilhada, sustentabilidade urbana e responsabilidade social no campus.
+O **UniCarona** é uma plataforma digital de compartilhamento de caronas desenvolvida para a comunidade acadêmica da **UNISINOS**. O projeto foi concebido dentro do curso de **Direito**, como parte da disciplina transversal do **10º semestre: Desenvolvimento Pessoal e Profissional**, sob a ótica da economia compartilhada, sustentabilidade urbana, responsabilidade social e conformidade com a proteção de dados (LGPD).
 
 ### 🎯 Objetivos Principais
-*   ✅ Reduzir custos de transporte para estudantes.
+*   ✅ Reduzir custos de transporte para os estudantes da universidade.
 *   ✅ Diminuir a emissão de carbono ($CO_2$) e o impacto ambiental no campus.
-*   ✅ Otimizar a ocupação de vagas de estacionamento da universidade.
+*   ✅ Otimizar a ocupação de vagas de estacionamento.
 
 ---
 
 ## 🚀 Funcionalidades da Plataforma
 
-*   **🔐 Módulo de Cadastro e Validação:** Filtro estrito para e-mails institucionais `@unisinos.br` com validação de matrícula ativa.
+*   **🔐 Módulo de Cadastro e Validação:** Filtro estrito para e-mails institucionais `@unisinos.br` com previsão de validação de matrícula ativa.
 *   **🗺️ Sistema de Caronas Inteligente:** Motoristas ofertam rotas específicas e passageiros filtram por campus, data e horários.
 *   **⭐ Sistema de Confiança (Reputação):** Avaliação mútua pontuada de 1 a 5 estrelas com comentários moderados.
-*   **🛡️ Recursos de Segurança e LGPD:** Arquitetura adaptada à Lei Geral de Proteção de Dados com retenção mínima e deleção automática após desmatrícula.
+*   **🛡️ Recursos de Segurança e LGPD:** Diretrizes alinhadas à Lei Geral de Proteção de Dados com retenção mínima e deleção de dados sensíveis após desmatrícula.
 
 ---
 
@@ -73,32 +73,32 @@ O **UniCarona** é uma plataforma digital de compartilhamento de caronas desenvo
 | Caronas por Semana | > 20 | > 50 |
 | Taxa de Ocupação | > 1.5 passageiros/carro | > 2.0 passageiros/carro |
 
-> 🌿 **Impacto ambiental estimado:** Economia de até **342kg de CO²** emitidos semanalmente nas rotas intermunicipais do campus.
+> 🌿 **Impacto ambiental estimado:** Economia de até **342kg de CO²** emitidos semanalmente nas rotas do campus.
 
 ---
 
-## 👥 Equipe de Desenvolvimento & Engenharia
+## 👥 Divisão de Papéis da Equipe
 
-### 🎓 Grupo 5 - Desenvolvimento Pessoal e Profissional
-*   **Fábio Wlademir Rodrigues da Silva** – UI/UX Design, Web Designer e Desenvolvimento Frontend.
+### 🎓 Grupo 5 - Escola de Direito (UNISINOS)
+*   **Fábio Wlademir Rodrigues da Silva** – **Exclusivo no Desenvolvimento Web, Engenharia de Software, UI/UX Design e Deploy.**
 *   **Celeste Klein** – Pesquisa de Campo e Conteúdo.
-*   **Igor Enninger** – Análise de Requisitos e Engenharia de Software.
+*   **Igor Enninger** – Análise de Requisitos Jurídicos e Funcionais.
 *   **Maitê Siqueira da Silva** – Documentação e Normatização Acadêmica.
-*   **Manoela Moreira** – Pesquisa de Mercado e Viabilidade Financeira.
+*   **Manoela Moreira** – Pesquisa de Mercado e Viabilidade.
 *   **Milena Arrosi Accadrolli** – Estratégia de Implementação e Pitch.
 
 ### 🏛️ Orientação e Cátedra
 *   **Professora Dra. Sonia Aparecida Zardenunes**
-*   **Disciplina:** Desenvolvimento Pessoal e Profissional (10º Semestre)
+*   **Disciplina:** Desenvolvimento Pessoal e Profissional (10º Semestre - Direito)
 *   **Instituição:** Universidade do Vale do Rio dos Sinos – UNISINOS
 
 ---
 
 ## 🛠️ Stack Tecnológica
 
-*   **Construção Técnica:** HTML5 estruturado, CSS3 Moderno (Custom Properties, Flexbox) e JavaScript Assíncrono Vanilla.
-*   **Hospedagem:** Deploy automatizado via GitHub Pages.
-*   **Design:** Arquitetura responsiva limpa (estilo *Landing Page* corporativa).
+*   **Construção Técnica:** HTML5 estruturado, CSS3 Moderno (Custom Properties, Flexbox) e JavaScript Vanilla.
+*   **Hospedagem:** Deploy automatizado e hospedado via GitHub Pages.
+*   **Design:** Arquitetura responsiva limpa (estilo *Landing Page* institucional).
 
 ---
 
