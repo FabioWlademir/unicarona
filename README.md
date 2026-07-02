@@ -1,260 +1,107 @@
 # 🚗 UniCarona - Sistema de Caronas Colaborativo
 
+<p align="center">
+  <b>Idiomas / Languages:</b><br>
+  <a href="README.md">🇧🇷 Português</a> | 
+  <a href="README.en.md">🇺🇸 English</a> | 
+  <a href="README.es.md">🇪🇸 Español</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Aprovação-APD_Com_Distinção-blueviolet?style=for-the-badge" alt="Aprovação APD">
+  <img src="https://img.shields.io/badge/Nota-M%C3%A1xima_10.0-success?style=for-the-badge" alt="Nota Máxima">
+  <img src="https://img.shields.io/badge/Semestre-2026%2F3_Intensivo-orange?style=for-the-badge" alt="Semestre">
+</p>
+
 <div align="center">
   
-  ![UniCarona Logo](https://img.shields.io/badge/UNICARONA-UNISINOS-blue)
-  ![Status](https://img.shields.io/badge/Status-Projeto%20Acadêmico-green)
-  ![Licença](https://img.shields.io/badge/Licença-MIT-yellow)
-  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+  [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=flat-square)](https://fabiowlademir.github.io/unicarona/)
+  [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=flat-square)](https://fabiowlademir.github.io/unicarona/)
+  [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square)](https://fabiowlademir.github.io/unicarona/)
+  [![GitHub Pages](https://img.shields.io/badge/Hospedagem-GitHub_Pages-black?logo=github&style=flat-square)](https://fabiowlademir.github.io/unicarona/)
 
-  **Carona entre universitários, feita por universitários**
+  **Carona entre universitários, feita por universitários. Uma solução moderna, clean e responsiva em formato Landing Page.**
 
-  [🌐 Site Demo]([#](https://fabiowlademir.github.io/unicarona/)) | [📋 Projeto Completo](#projeto) | [👥 Equipe](#equipe)
+  [🌐 Visualizar Site Demo](https://fabiowlademir.github.io/unicarona/)
 
 </div>
+
+---
+
+## 👨‍💻 Contrate o Desenvolvedor (Disponível para Oportunidades)
+
+Este projeto foi totalmente planejado, desenhado e codificado por mim como Desenvolvedor Frontend e UI/UX. Estou atualmente **disponível para novas oportunidades no mercado de trabalho** nas áreas de Tecnologia e suporte técnico.
+
+**Minhas Competências Principais:**
+*   **Infraestrutura & Operações:** Analista de Suporte em TI (experiência consolidada com rotinas de NOC/SOC, monitoramento de infraestrutura, redes e segurança).
+*   **Desenvolvimento Web / Frontend:** Criação de interfaces modernas, responsivas (Mobile-first), otimizadas para SEO Avançado, performance e acessibilidade usando HTML5, CSS3 puro e JavaScript estruturado.
+*   **LegalTech & Soluções Corporativas:** Engenharia de software e web design focados em ecossistemas institucionais, acadêmicos e jurídicos.
+
+### 🌐 Canais de Contato Direto:
+*   **Portfólio Oficial:** [fabiowlademir.github.io](https://fabiowlademir.github.io/)
+*   **LinkedIn:** [linkedin.com/in/fabiowlademir](https://www.linkedin.com/in/fabiowlademir)
+*   **E-mail Profissional:** fabiowlademirrs@gmail.com
+*   **GitHub Principal:** [github.com/FabioWlademir](https://github.com/FabioWlademir)
+
+---
 
 ## 📋 Sobre o Projeto
 
-O **UniCarona** é uma plataforma digital de compartilhamento de caronas desenvolvida exclusivamente para a comunidade acadêmica da **UNISINOS**. O projeto tem como objetivo criar uma solução sustentável e colaborativa para os desafios de mobilidade urbana enfrentados pelos estudantes.
+O **UniCarona** é uma plataforma digital de compartilhamento de caronas desenvolvida exclusivamente para a comunidade acadêmica da **UNISINOS**. Desenvolvido durante o intensivo de inverno como projeto final multidisciplinar, ele foca em economia compartilhada, sustentabilidade urbana e responsabilidade social no campus.
 
 ### 🎯 Objetivos Principais
-- ✅ Reduzir custos de transporte para estudantes
-- ✅ Diminuir o impacto ambiental no campus
-- ✅ Promover integração entre alunos de diferentes cursos
-- ✅ Otimizar o uso das vagas de estacionamento
-- ✅ Criar uma comunidade universitária mais conectada
+*   ✅ Reduzir custos de transporte para estudantes.
+*   ✅ Diminuir a emissão de carbono ($CO_2$) e o impacto ambiental no campus.
+*   ✅ Otimizar a ocupação de vagas de estacionamento da universidade.
 
-## 🚀 Funcionalidades
+---
 
-### 🔐 Módulo de Cadastro e Validação
-- Registro exclusivo com e-mail `@unisinos.br`
-- Verificação automática de matrícula ativa
-- Perfil personalizado com informações acadêmicas
+## 🚀 Funcionalidades da Plataforma
 
-### 🗺️ Sistema de Caronas
-- **Para motoristas:** Oferecer caronas com trajetos específicos
-- **Para passageiros:** Buscar e solicitar caronas disponíveis
-- Sistema de mensagens privadas para combinar detalhes
-- Filtros por data, horário e campus
+*   **🔐 Módulo de Cadastro e Validação:** Filtro estrito para e-mails institucionais `@unisinos.br` com validação de matrícula ativa.
+*   **🗺️ Sistema de Caronas Inteligente:** Motoristas ofertam rotas específicas e passageiros filtram por campus, data e horários.
+*   **⭐ Sistema de Confiança (Reputação):** Avaliação mútua pontuada de 1 a 5 estrelas com comentários moderados.
+*   **🛡️ Recursos de Segurança e LGPD:** Arquitetura adaptada à Lei Geral de Proteção de Dados com retenção mínima e deleção automática após desmatrícula.
 
-### ⭐ Sistema de Confiança
-- Avaliação mútua após cada viagem (1-5 estrelas)
-- Sistema de reputação com níveis progressivos
-- Comentários públicos moderados
-- Denúncias gerenciadas por moderadores
+---
 
-### 🛡️ Recursos de Segurança
-- Verificação de identidade acadêmica
-- Caronas verificadas com validação opcional
-- Check-in/check-out digital
-- Dicas de segurança e moderadores ativos
-
-### 💬 Fórum de Discussão
-- Tópicos organizados por campus
-- Dúvidas frequentes
-- Sugestões de melhorias
-- Eventos especiais da comunidade
-
-## 📊 Impacto Esperado
+## 📊 Impacto & Métricas Esperadas
 
 | Métrica | Meta (3 meses) | Meta (6 meses) |
 |---------|---------------|---------------|
-| Usuários ativos | >100 | >300 |
-| Caronas/semana | >20 | >50 |
-| Taxa de ocupação | >1.5 passageiros/carro | >2 passageiros/carro |
-| Satisfação | >4 estrelas | >4.5 estrelas |
-
-**Impacto ambiental estimado:** 342kg de CO² economizados semanalmente
-
-## 🛠️ Tecnologias Utilizadas
-
-- **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
-- **Hospedagem:** GitHub Pages (gratuita)
-- **Ícones:** Font Awesome 6.4.0
-- **Design:** Responsivo (Mobile-first)
-- **Cores:** Paleta institucional UNISINOS
-
-## 📁 Estrutura do Projeto
-unicarona/
-│
-├── index.html # Página principal
-├── README.md # Esta documentação
-├── LICENSE # Licença MIT
-│
-├── assets/ # Recursos estáticos
-│ ├── images/ # Imagens e logos
-│ ├── css/ # Estilos adicionais
-│ └── js/ # Scripts adicionais
-│
-└── docs/ # Documentação adicional
-├── projeto-completo.md # Documentação do projeto
-└── apresentacao.pptx # Apresentação em PowerPoint
-
-
-## 🚀 Como Executar o Projeto
-
-### Opção 1: GitHub Pages (Recomendada)
-1. Faça um fork deste repositório
-2. Ative o GitHub Pages nas configurações do repositório
-3. Acesse: `https://seuusuario.github.io/unicarona`
-
-### Opção 2: Localmente
-
-# Clone o repositório
-git clone https://github.com/seuusuario/unicarona.git
-
-# Acesse a pasta do projeto
-cd unicarona
-
-# Abra o arquivo principal
-open index.html
-# ou
-xdg-open index.html
-# ou simplesmente arraste o arquivo para o navegador
-
-
-👥 Equipe de Desenvolvimento
-🎓 Grupo 5 - Desenvolvimento Pessoal e Profissional
-Integrantes:
-
-Celeste Klein - Pesquisa e Conteúdo
-
-Fábio Wlademir Rodrigues da Silva - Design e Desenvolvimento Web
-
-Igor Enninger - Análise de Requisitos
-
-Maitê Siqueira da Silva - Documentação
-
-Manoela Moreira - Pesquisa de Mercado
-
-Milena Arrosi Accadrolli - Estratégia de Implementação
-
-Orientação:
-
-Professora: Sonia Aparecida Zardenunes
-
-Disciplina: Desenvolvimento Pessoal e Profissional
-
-Universidade: Universidade do Vale do Rio dos Sinos – UNISINOS
-
-Data: 17 de dezembro de 2025
-
-📚 Contexto Acadêmico
-Este projeto foi desenvolvido como parte da disciplina Desenvolvimento Pessoal e Profissional da UNISINOS, com foco nos seguintes pilares:
-
-🎯 Objetivos da Atividade
-Desenvolver um projeto colaborativo voltado para a comunidade
-
-Aplicar conceitos de economia compartilhada e sustentabilidade
-
-Identificar e solucionar necessidades sociais
-
-Praticar trabalho em equipe multidisciplinar
-
-🌱 Temas Abordados
-Colaboração: Trabalho em equipe para desenvolvimento conjunto
-
-Economia de Compartilhamento: Sistema de caronas colaborativo
-
-Sustentabilidade: Redução de impacto ambiental
-
-Necessidades Sociais: Mobilidade acessível para estudantes
-
-Responsabilidade Social: Projeto com impacto positivo na comunidade
-
-📈 Fases de Implementação
-Fase 1: Protótipo (1-2 meses)
-Desenvolvimento da plataforma mínima viável
-
-Recrutamento de beta testers (20-30 alunos)
-
-Validação institucional com a reitoria
-
-Fase 2: Lançamento Piloto (3º mês)
-Campanha no campus São Leopoldo
-
-Parceria com centros acadêmicos
-
-Divulgação via e-mail institucional
-
-Fase 3: Expansão (4-6 meses)
-Inclusão do campus Porto Alegre
-
-Desenvolvimento de app mobile
-
-Eventos de integração "Carona Solidária"
-
-Fase 4: Consolidação (6-12 meses)
-Sistema para eventos externos
-
-Parcerias com estabelecimentos locais
-
-Estatísticas de impacto detalhadas
-
-🔒 Aspectos Legais e de Segurança
-Documentação Necessária
-Termo de uso e responsabilidade
-
-Política de privacidade
-
-Guia de conduta da comunidade
-
-Contrato com a universidade
-
-Conformidade
-✅ LGPD (Lei Geral de Proteção de Dados)
-
-✅ Dados pessoais mínimos necessários
-
-✅ Exclusão automática após desmatrícula
-
-✅ Anonimização de avaliações antigas
-
-🤝 Como Contribuir
-Este projeto é aberto para colaborações! Se você é estudante da UNISINOS e quer ajudar:
-
-Desenvolvedores: Ajude a melhorar a plataforma
-
-Designers: Contribua com melhorias na interface
-
-Comunicadores: Ajude na divulgação
-
-Organizadores: Participe da moderação
-
-Próximos passos:
-
-Formar comitê de fundação (5-7 voluntários)
-
-Buscar apoio institucional (PROCOM, DCE)
-
-Realizar pesquisa com 100+ alunos
-
-Organizar hackathon de desenvolvimento
-
-📄 Licença
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
-
-<div align="center">
-"Juntos chegamos mais longe, com mais economia e menos impacto."
-
-<sub>UniCarona © 2025 - Projeto colaborativo da comunidade UNISINOS</sub>
-
-<sub>Design by <a href="https://fabiowlademir.github.io/">Fábio Wlademir</a></sub>
-
-
+| Usuários Ativos | > 100 | > 300 |
+| Caronas por Semana | > 20 | > 50 |
+| Taxa de Ocupação | > 1.5 passageiros/carro | > 2.0 passageiros/carro |
+
+> 🌿 **Impacto ambiental estimado:** Economia de até **342kg de CO²** emitidos semanalmente nas rotas intermunicipais do campus.
 
 ---
 
-## 📞 **Vamos Conversar?**
+## 👥 Equipe de Desenvolvimento & Engenharia
 
-<div align="center">
+### 🎓 Grupo 5 - Desenvolvimento Pessoal e Profissional
+*   **Fábio Wlademir Rodrigues da Silva** – UI/UX Design, Web Designer e Desenvolvimento Frontend.
+*   **Celeste Klein** – Pesquisa de Campo e Conteúdo.
+*   **Igor Enninger** – Análise de Requisitos e Engenharia de Software.
+*   **Maitê Siqueira da Silva** – Documentação e Normatização Acadêmica.
+*   **Manoela Moreira** – Pesquisa de Mercado e Viabilidade Financeira.
+*   **Milena Arrosi Accadrolli** – Estratégia de Implementação e Pitch.
 
-[![Email](https://img.shields.io/badge/Email-Contato%20Profissional-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fabiowlademir@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil%20Profissional-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fabiowlademir/)
-[![Portfolio](https://img.shields.io/badge/🌐-Portfólio%20Online-FF6B6B?style=for-the-badge)](https://fabiowlademir.github.io)
-
-</div>
+### 🏛️ Orientação e Cátedra
+*   **Professora Dra. Sonia Aparecida Zardenunes**
+*   **Disciplina:** Desenvolvimento Pessoal e Profissional (10º Semestre)
+*   **Instituição:** Universidade do Vale do Rio dos Sinos – UNISINOS
 
 ---
+
+## 🛠️ Stack Tecnológica
+
+*   **Construção Técnica:** HTML5 estruturado, CSS3 Moderno (Custom Properties, Flexbox) e JavaScript Assíncrono Vanilla.
+*   **Hospedagem:** Deploy automatizado via GitHub Pages.
+*   **Design:** Arquitetura responsiva limpa (estilo *Landing Page* corporativa).
+
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a **Licença MIT** - veja o arquivo `LICENSE` para detalhes.
